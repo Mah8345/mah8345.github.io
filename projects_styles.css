@@ -1,0 +1,138 @@
+:root {
+    --main-black: #353535;
+    --middle-page-gray: #414141;
+    --separator-gray: #4E4E4E;
+    --card-gray: #585858;
+    --white: #ffffff;
+    --primary-font: 'Inter', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--middle-page-gray);
+    font-family: var(--primary-font);
+    color: var(--white);
+  }
+  
+  header {
+    background: var(--main-black);
+    padding: 0px 160px 0px;
+    position: relative;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    
+  }
+  
+  .name {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--white);
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+
+  nav a:hover, .header-content a:hover {
+    color: #00ffff; /* light cyan or pick a nice highlight color */
+    border-bottom: 2px solid #00ffff;
+  }
+  
+  .separator {
+    height: 5px;
+    background: var(--separator-gray);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  main {
+    padding: 50px 160px;
+  }
+  
+  .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  
+  .project-card {
+    background: var(--card-gray);
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin-bottom: 40px;
+  }
+  
+  .project-card h3 {
+    font-size: 34px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+  }
+  
+  .project-card p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .project-card button {
+    margin-top: 20px;
+    background: var(--separator-gray);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 600px;
+    display: none; 
+    padding: 15px 28px;
+    font-size: 32px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 64px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #555;
+  }
+  

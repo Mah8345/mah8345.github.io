@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahyar Esmaeeli - Projects</title>
+  <link rel="stylesheet" href="projects_styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="/index.html" class="name">mahyar esmaeeli</a>
+      <nav>
+        <ul>
+          <li><a href="/index.html">home</a></li>
+          <li><a href="#">projects</a></li>
+          <li><a href="#">interests</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="separator"></div>
+  </header>
+
+  <main>
+    <h2 class="section-title">projects:</h2>
+
+    <section class="project-card" id="project-1">
+      <h3>samad</h3>
+      <p>This was the project of fundamentals of computer programming lecture where we had to program a university food service application using C programming language.</p>
+      
+    </section>
+
+    <section class="project-card">
+      <h3>twitter</h3>
+      <p>The advanced computer programming project where we had to program a twitter-like application using java.</p>
+      <form action="https://github.com/mohammadhm180/AP-Project">
+        <button type="submit">More...</button>
+      </form>
+      
+    </section>
+
+    <section class="project-card">
+      <h3>logic mortal kombat</h3>
+      <p>In this one, we had to design and implement a logic circuit to simulate a fighting game. This was the logic circuits lecture project.</p>
+    </section>
+
+    <section class="project-card">
+      <h3>english learning website</h3>
+      <p>This one had lots of things for me to learn, we had to implement a microservice English learning website which our team was responsible for only one of them. It was for software engineering 1 course.</p>
+      <form action="https://github.com/Mah8345/Software-Engineering-1402-02">
+        <button type="submit">More...</button>
+      </form>
+    </section>
+
+    <section class="project-card">
+      <h3>embedded space invaders</h3>
+      <p>One of the most fun projects I've ever done. We had to implement the famous video game Space Invaders but with embedded systems tools!. The grid was a LED matrix and a mircrocontroller was responsible for handling the grid and user interactions.</p>
+    </section>
+
+    <section class="project-card">
+      <h3>embedded tinkerings</h3>
+      <p>Actually there isn’t a word “Tinkerings” in English vocabulary, I named the project “Embedded Tinkerings” because I wanted the name to imply what the project is about. The project is a collection of small project each discovering a simple concept of embedded systems universe. This one is not a lecture’s project.</p>
+      <form action="https://github.com/Mah8345/Embedded-Tinkerings">
+        <button type="submit">More...</button>
+      </form>
+    </section>
+  </main>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
+
+  <script>
+    const target = document.getElementById('project-1');
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          scrollBtn.style.display = 'none';
+        } else {
+          scrollBtn.style.display = 'block';
+        }
+      },
+      {
+        root: null,
+        threshold: 0.1
+      }
+    );
+
+    observer.observe(target);
+
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+
+</html>
+
+
+  
