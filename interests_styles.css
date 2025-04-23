@@ -129,6 +129,32 @@ nav a:hover, .header-content a:hover {
   border-radius: 20px;
 }
 
+.img-5 {
+  width: 280px;
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  transform: rotate(-10deg);
+  border-radius: 20px;
+}
+
+.img-6 {
+  width: 320px;
+  position: absolute;
+  left: 750px;
+  top: 250px;
+  transform: rotate(14deg);
+  border-radius: 20px;
+}
+
+.img-7 {
+  width: 250px;
+  position: absolute;
+  left: 100px;
+  top: 350px;
+  transform: rotate(-7deg);
+  border-radius: 20px;
+}
 
 /* Interests Section */
 .interests-section {
