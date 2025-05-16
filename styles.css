@@ -130,7 +130,7 @@ body {
     align-items: center;
     gap: 16px;
     font-size: 32px;
-    color: black;
+    color: #eeeeee; /* instead of black */
   }
   
   .icon {
